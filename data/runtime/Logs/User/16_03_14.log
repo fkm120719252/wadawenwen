@@ -1,0 +1,14 @@
+[ 2016-03-14T10:28:46+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.038002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051003s ]
+NOTIC: [8] Undefined index: url C:\phpStudy\WWW\wandawenwen\wenwen\application\Common\Controller\AppframeController.class.php 第 24 行.
+
+[ 2016-03-14T23:19:09+08:00 ] 127.0.0.1 /index.php?g=user&m=index&a=is_login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.035982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036981s ]
+NOTIC: [8] Undefined index: url C:\phpStudy\WWW\wandawenwen\wenwen\application\Common\Controller\AppframeController.class.php 第 24 行.
+

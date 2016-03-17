@@ -1,0 +1,36 @@
+[ 2016-03-08T11:34:41+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-03-08T11:34:44+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Shop&a=index&menuid=163
+ERR: 无法加载控制器:Shop
+
+[ 2016-03-08T11:41:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Shop&a=index&menuid=163
+ERR: 模板不存在:admin/themes/simplebootx/Admin/Shop/index.html
+
+[ 2016-03-08T11:51:48+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Shop&a=index&menuid=163
+ERR: Think\Model:assign方法不存在！
+
+[ 2016-03-08T12:24:05+08:00 ] 127.0.0.1 /index.php?g=Admin&m=ad&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `cmf_ad` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\wandawenwen\wenwen\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\wandawenwen\wenwen\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `cmf_ad` (`ad_name`,`ad_content`) VALUES ('百度','') [ RunTime:0.0380s ]
+
+[ 2016-03-08T12:24:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=ad&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `cmf_ad` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate C:\wamp\www\wandawenwen\wenwen\simplewind\Core\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp\www\wandawenwen\wenwen\simplewind\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `cmf_ad` SET `ad_name`='百度',`ad_content`='gg' WHERE `ad_id` = '1' [ RunTime:0.0110s ]
+

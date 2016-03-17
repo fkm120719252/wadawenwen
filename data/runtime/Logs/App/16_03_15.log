@@ -1,0 +1,19 @@
+[ 2016-03-15T15:14:05+08:00 ] 127.0.0.1 /index.php/App/red/openRed
+ERR: 1146:Table 'wenwen.cmf_rod' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cmf_rod`
+
+[ 2016-03-15T19:13:59+08:00 ] 127.0.0.1 /index.php/App/red/GrabRed
+ERR: 1062:Duplicate entry '20' for key 'PRIMARY'
+ [ SQL语句 ] : UPDATE `cmf_rob` SET `id`='20',`coding`='2147483647',`sid`='8',`money`='15.59',`status`='0',`addtime`='1458030769' WHERE ( coding =2147483647 )
+
+[ 2016-03-15T19:14:47+08:00 ] 127.0.0.1 /index.php/App/red/GrabRed
+ERR: 非法数据对象！
+
+[ 2016-03-15T19:44:50+08:00 ] 127.0.0.1 /index.php/App/red/GrabRed
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `cmf_rob` WHERE ( coding = 2147483647,status=1 ) LIMIT 1  
+
+[ 2016-03-15T19:47:44+08:00 ] 127.0.0.1 /index.php/App/red/GrabRed
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `cmf_rob` SET `status`='0' WHERE ( id = )
+

@@ -1,0 +1,8 @@
+[ 2016-03-10T21:12:39+08:00 ] 127.0.0.1 /index.php/App/User/editWeixin
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( uid = )' at line 1
+ [ SQL语句 ] : UPDATE `cmf_user_attach` SET  WHERE ( uid = )
+
+[ 2016-03-10T21:12:59+08:00 ] 127.0.0.1 /index.php/App/User/editWeixin
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE ( uid =5 )' at line 1
+ [ SQL语句 ] : UPDATE `cmf_user_attach` SET  WHERE ( uid =5 )
+

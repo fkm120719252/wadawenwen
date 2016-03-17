@@ -1,0 +1,8 @@
+[ 2016-03-08T13:46:21+08:00 ] 127.0.0.1 /index.php/App/Ques/ques
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_questions` WHERE ( title %健康%  ) 
+
+[ 2016-03-08T13:46:43+08:00 ] 127.0.0.1 /index.php/App/Ques/ques
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%健康%  )' at line 1
+ [ SQL语句 ] : SELECT * FROM `cmf_questions` WHERE ( title like %健康%  ) 
+

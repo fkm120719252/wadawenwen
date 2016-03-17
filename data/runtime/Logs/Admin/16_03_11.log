@@ -1,0 +1,33 @@
+[ 2016-03-11T22:37:46+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0312s ]
+SQL: UPDATE `cmf_users` SET `user_code`='',`user_login`='admin',`user_pass`='###4ffcf5405ad355ea982e7b55b4248e95',`user_nicename`='123456789',`user_email`='751415315@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2016-03-11 22:37:46',`create_time`='2016-03-03 09:00:57',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0312s ]
+
+[ 2016-03-11T23:11:24+08:00 ] 127.0.0.1 /index.php?g=Admin&m=slide&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0140s ]
+SQL: INSERT INTO `cmf_slide` (`slide_cid`,`slide_name`,`slide_type`,`slide_url`,`slide_des`,`slide_content`,`slide_pic`) VALUES ('1','店铺推广','2','148877','','','') [ RunTime:0.0140s ]
+
+[ 2016-03-11T23:21:58+08:00 ] 127.0.0.1 /index.php?g=Admin&m=slide&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `cmf_slide` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `cmf_slide_cat` [ RunTime:0.0120s ]
+SQL: UPDATE `cmf_slide` SET `slide_cid`='1',`slide_name`='店铺推广',`slide_type`='1',`slide_url`='148877',`slide_des`='',`slide_content`='',`slide_pic`='' WHERE `slide_id` = '2' [ RunTime:0.0100s ]
+
